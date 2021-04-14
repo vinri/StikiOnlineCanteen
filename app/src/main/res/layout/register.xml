@@ -1,29 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginLeft="30dp"
     android:layout_marginRight="30dp"
-    tools:context=".MainActivity"
-    android:orientation="vertical"
-    android:gravity="center">
+    android:gravity="center"
+    >
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SIGN IN"
+        android:text="REGISTER"
         android:layout_marginBottom="30dp"
         android:textColor="#9C27B0"
         android:textSize="25sp"
         android:textStyle="bold"
-         />
+        />
     <EditText
         android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Username@email.com"
+        android:hint="Email@email.com"
         android:layout_marginBottom="10dp"
         android:inputType="textEmailAddress"/>
     <EditText
@@ -33,35 +31,43 @@
         android:layout_marginBottom="10dp"
         android:hint="Password"
         android:inputType="textPassword"/>
-    <Button
-        android:id="@+id/login"
+    <EditText
+        android:id="@+id/confirmpw"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sign in"
+        android:layout_marginBottom="10dp"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"/>
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:layout_marginBottom="10dp"
+        android:inputType="textPersonName"/>
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:layout_marginBottom="10dp"
+        android:inputType="number"/>
+    <Button
+        android:id="@+id/reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="get started"
         android:backgroundTint="#9C27B0"
         android:textColor="#FFFFFF"
         android:layout_marginBottom="10dp"
         />
     <TextView
-        android:id="@+id/reg"
+        android:id="@+id/login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="REGISTER"
-        android:layout_marginBottom="10dp"
+        android:text="Back To Login"
         android:textColor="#9C27B0"/>
-    <TextView
-        android:id="@+id/regCus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="REGISTER AS CUSTOMER"
-        android:textColor="#9C27B0"
-        android:visibility="gone"/>
-    <TextView
-        android:id="@+id/regSell"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="REGISTER AS SELLER"
-        android:textColor="#9C27B0"
-        android:visibility="gone"/>
+
+
 
 </LinearLayout>
