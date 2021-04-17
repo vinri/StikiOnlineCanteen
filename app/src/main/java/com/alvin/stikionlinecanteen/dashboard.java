@@ -33,7 +33,7 @@ public class dashboard extends AppCompatActivity {
                         return true;
                     case R.id.About:
                         startActivity(new Intent(getApplicationContext()
-                                ,dashboard.class));
+                                ,about.class));
                         overridePendingTransition(0,0);
                         return true;
 
